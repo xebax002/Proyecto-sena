@@ -1,0 +1,36 @@
+/* =========================================================
+   login.css — solo la página de inicio de sesión.
+   Cargar DESPUÉS de estilos.css.
+   ========================================================= */
+
+.fondo-login {
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url("../../IMG/fondo%20login.jpg") center / cover no-repeat,
+        #111;
+}
+
+.fondo-login .card {
+    background: rgba(255, 255, 255, 0.25);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 20px;
+}
+
+.fondo-login .card-body h3 {
+    margin: 0 0 16px;
+    text-align: center;
+    color: #fff;
+}
+
+.fondo-login nav a { color: #fff; }
+.fondo-login nav a:hover { color: #ff9a9a; }
+
+.fondo-login .card-footer {
+    background: rgba(0, 0, 0, 0.35);
+    border-top-color: rgba(255, 255, 255, 0.2);
+    color: #fff;
+}
+
+.fondo-login .card-footer a { color: #ff7b7b; }

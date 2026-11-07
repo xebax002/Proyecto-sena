@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FIT LIFE.GYM - Iniciar sesión</title>
+
+    <link rel="stylesheet" href="./assets/css/estilos.css">
+    <link rel="stylesheet" href="./assets/css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <script src="./assets/js/ui.js" defer></script>
+    <script src="./assets/js/api.js" defer></script>
+    <script src="./assets/js/main.js" defer></script>
+</head>
+<body>
+    <section class="fondo fondo-login">
+        <div class="contenedor">
+            <div class="card">
+                <header class="card-header">
+                    <h2>FIT LIFE.GYM</h2>
+                </header>
+
+                <div class="card-body">
+                    <h3>Iniciar sesión</h3>
+
+                    <nav>
+                        <ul>
+                            <li><a href="./PAGINA%20WEB.html">Inicio</a></li>
+                            <li><a href="./registro.html">Registrarse</a></li>
+                            <li><a href="./forgot-password.html">Recuperar contraseña</a></li>
+                        </ul>
+                    </nav>
+
+                    <form id="formLogin">
+                        <div class="input-group">
+                            <input type="email" id="correo" name="correo"
+                                   placeholder="Correo electrónico"
+                                   autocomplete="email" required>
+                        </div>
+
+                        <div class="password-container">
+                            <div class="input-group">
+                                <input type="password" id="password" name="password"
+                                       placeholder="Contraseña"
+                                       autocomplete="current-password" required>
+                            </div>
+                            <button type="button" class="password-toggle"
+                                    data-label="contraseña" aria-label="Mostrar contraseña">
+                                <i class="fa-solid fa-eye"></i>
+                            </button>
+                        </div>
+
+                        <div id="login-message" class="validation-message"
+                             role="status" aria-live="polite"></div>
+
+                        <button class="btn" type="submit">INICIAR SESIÓN</button>
+                    </form>
+                </div>
+
+                <footer class="card-footer">
+                    <p>¿No tienes cuenta? <a href="./registro.html">¡Regístrate!</a></p>
+                </footer>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

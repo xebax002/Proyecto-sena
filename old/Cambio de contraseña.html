@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FIT LIFE.GYM - Cambio de contraseña</title>
+
+    <link rel="stylesheet" href="./assets/css/estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <script src="./assets/js/ui.js" defer></script>
+    <script src="./assets/js/api.js" defer></script>
+    <script src="./assets/js/components/Cambio-contrase%C3%B1a.js" defer></script>
+</head>
+<body>
+    <section class="fondo">
+        <div class="contenedor">
+            <div class="card">
+                <header class="card-header">
+                    <h2>Cambio de contraseña</h2>
+                </header>
+
+                <div class="card-body">
+                    <p style="text-align:center">Crea una nueva contraseña para tu cuenta.</p>
+
+                    <div id="mensaje" class="validation-message"
+                         role="status" aria-live="polite"></div>
+
+                    <form id="formCambio">
+                        <div class="password-container">
+                            <div class="input-group">
+                                <input type="password" id="password" name="password"
+                                       placeholder="Nueva contraseña"
+                                       autocomplete="new-password" minlength="8"
+                                       pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9]).{8,}"
+                                       title="Usa al menos 8 caracteres, una mayúscula, una minúscula y un número."
+                                       required>
+                            </div>
+                            <button type="button" class="password-toggle"
+                                    data-label="contraseña" aria-label="Mostrar contraseña">
+                                <i class="fa-solid fa-eye"></i>
+                            </button>
+                        </div>
+
+                        <div class="password-container">
+                            <div class="input-group">
+                                <input type="password" id="confirmarPassword" name="confirmarPassword"
+                                       placeholder="Confirmar contraseña"
+                                       autocomplete="new-password" required>
+                            </div>
+                            <button type="button" class="password-toggle"
+                                    data-label="confirmación de contraseña"
+                                    aria-label="Mostrar confirmación de contraseña">
+                                <i class="fa-solid fa-eye"></i>
+                            </button>
+                        </div>
+
+                        <button class="btn" type="submit">CAMBIAR CONTRASEÑA</button>
+
+                        <a class="btn-secundario" href="./index.html">
+                            <i class="fa-solid fa-arrow-left"></i>
+                            Volver al inicio de sesión
+                        </a>
+                    </form>
+                </div>
+
+                <footer class="card-footer">
+                    <p>¿No tienes cuenta? <a href="./registro.html">¡Regístrate!</a></p>
+                </footer>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
