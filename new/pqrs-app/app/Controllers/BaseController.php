@@ -28,6 +28,7 @@ abstract class BaseController extends Controller
      */
 
     // protected $session;
+     protected $helpers = ['jwt'];
 
     /**
      * @param CLIRequest|IncomingRequest $request
